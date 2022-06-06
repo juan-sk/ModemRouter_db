@@ -1,4 +1,3 @@
-
 DROP TABLE IF EXISTS `ticket`;
 create table ticket(
 
@@ -9,9 +8,10 @@ create table ticket(
     detalle varchar(500),
     observacion varchar(500),
     estado int,
-    fecha_creacion date default current_timestamp,
+    fecha_creacion timestamp default current_timestamp,
     id_usuario_creacion int,
     id_usuario_derivado int,
+    id_criticidad int,
     id_area int,
     id_tipo_ticket int
     

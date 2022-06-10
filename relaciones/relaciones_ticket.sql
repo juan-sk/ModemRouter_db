@@ -1,3 +1,9 @@
+-- alter para agregar relacion entre ticket y estado ticket
+ALTER table ticket
+ADD CONSTRAINT ticket_estado_ticket_fk
+FOREIGN KEY foreign_key_name(id_estado)
+REFERENCES estado_ticket(id_estado_ticket);
+
 -- alter para agregar relacion entre ticket y criticidad
 
 ALTER table ticket

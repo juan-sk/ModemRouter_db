@@ -7,7 +7,7 @@ create table ticket(
     telefono varchar(20),
     detalle varchar(500),
     observacion varchar(500),
-    estado int,
+    id_estado int,
     fecha_creacion timestamp default current_timestamp,
     id_usuario_creacion int,
     id_usuario_derivado int,
